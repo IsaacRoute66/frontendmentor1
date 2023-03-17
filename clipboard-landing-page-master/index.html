@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Clipboard landing page</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+
+    *{
+      padding: 0;
+      margin: 0;
+    }
+    #blocoCabecalho{
+      width: 100%;
+      height: 380px;
+      background-image: url(./images/bg-header-desktop.png);
+      background-repeat: no-repeat;
+      background-position-x: -40px;
+      background-size: 1700px;
+      display: flex;
+      justify-content: center;
+    }
+    #subBlocoCabecalho{
+      width: 70%;
+      background-image: url(./images/logo.svg);
+      background-repeat: no-repeat;
+      background-position: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: self-end;
+      padding-bottom: 15px;
+      font-size: 45px;
+      font-family: 'Bai Jamjuree', sans-serif;
+      font-weight: 600;
+      color: #4f555a;
+    }
+    #informacaoDownload{
+      font-size: 20.2px;
+      font-family: 'Bai Jamjuree', sans-serif;
+      line-height: 30px;
+      text-align: center;
+      color: #a7abae;
+      display: flex;
+      justify-content: center;
+    }
+    #blocoInformacaoDownload{
+      
+    }
+    #blocoBotaoDownload{
+      width: 100%;
+      height: 164px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    #subBlocoBotaoDownload{
+      width: 30%;
+      height: 60px;
+      display: flex;
+      justify-content: center;
+    }
+    #botaoDownloadEsquerdo{
+      margin-right: 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 230px;
+      background-color: #67c9b6;
+      color: #ffffff;
+      font-family: 'Bai Jamjuree', sans-serif;
+      font-weight: 400;
+      text-shadow: 0.5px 0px 1px #ffffff;
+      text-align: center;
+      letter-spacing: 1.2px;
+      border-radius: 40px;
+      border-bottom: 3px solid #4fb29f;
+    }
+    #botaoDownloadDireito{
+      margin-right: 15px;
+      width: 230px;
+      background-color: #8ea2ef;
+      color: #ffffff;
+      text-align: center;
+      font-family: 'Bai Jamjuree', sans-serif;
+      font-weight: 400;
+      text-shadow: 0.5px 0px 1px #ffffff;
+      letter-spacing: 1.2px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 40px;
+      border-bottom: 3px solid #7784bc;
+    }
+    #blocoInformativoDeTransferencia{
+      width: 100%;
+      height: 320px;
+      display: flex;
+      justify-content: center;
+    }
+    #subBlocoInformativoDeTransferencia{
+      margin-top: 93px;
+      text-align: center;
+      width: 70%;
+      height: 200px;
+      font-size: 35px;
+      font-family: 'Bai Jamjuree', sans-serif;
+      font-weight: 600;
+      color: #4f555a;
+    }
+    #informativoDeTransferenciaArmazenamento{
+      margin-top: 20px;
+      font-size: 18px;
+      font-family: 'Bai Jamjuree', sans-serif;
+      font-weight: 400;
+      line-height: 30px;
+      text-align: center;
+      color: #a7abae;
+    }
+    #blocoConteudo1{
+      width: 100%;
+      height: 750px;
+      display: flex;
+      justify-content: space-around;
+    }
+    #subBlocoConteudo1{
+      width: 50%;
+      background-image: url(./images/image-computer.png);
+      background-repeat: no-repeat;
+      background-position-x: -30px;
+    }
+    #subBlocoConteudo2{
+      width: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    #conteudoInterno0_subBlocoConteudo2{
+      width: 73%;
+      height: 82%;
+      font-size: 23px;
+      font-family: 'Bai Jamjuree', sans-serif;
+      font-weight: 700;
+      color: #4f555a;
+    }
+    #conteudoInterno1_subBlocoConteudo2{
+      margin-top: 10px;
+      font-size: 16px;
+      font-family: 'Bai Jamjuree', sans-serif;
+      font-weight: 400;
+      line-height: 30px;
+      color: #a7abae;
+    }
+    #conteudoInterno_subBlocoConteudo2{
+      margin-top: 55px;
+    }
+    #blocoConteudo2_2{
+      width: 100%;
+      height: auto;
+      display: flex;
+      justify-content: center;
+    }
+    #subBlocoConteudo2_2{
+      width: 70%;
+      font-size: 35px;
+      font-family: 'Bai Jamjuree', sans-serif;
+      font-weight: 600;
+      color: #4f555a;
+      text-align: center;
+    }
+    #interno_subBlocoConteudo2_2{
+      margin-top: 20px;
+      font-size: 18px;
+      font-family: 'Bai Jamjuree', sans-serif;
+      font-weight: 400;
+      line-height: 30px;
+      text-align: center;
+      color: #a7abae;
+    }
+    #blocoConteudo2_3{
+      width: 100%;
+      height: 800px;
+      display: flex;
+      justify-content: center;
+    }
+    #subBlocoConteudo2_3{
+      margin-top: 100px;
+      width: 70%;
+      height: 700px;
+      background-image: url(./images/image-devices.png);
+      background-repeat: no-repeat;
+      background-position-x: 105px;
+    }
+    #blocoConteudo2_4{
+      width: 100%;
+      height: auto;
+      display: flex;
+      justify-content: center;
+    }
+    #subBlocoConteudo2_4{
+      width: 70%;
+      font-size: 35px;
+      font-family: 'Bai Jamjuree', sans-serif;
+      font-weight: 600;
+      color: #4f555a;
+      text-align: center;
+    }
+    #interno_subBlocoConteudo2_4{
+      margin-top: 20px;
+      font-size: 18px;
+      font-family: 'Bai Jamjuree', sans-serif;
+      font-weight: 400;
+      line-height: 30px;
+      text-align: center;
+      color: #a7abae;
+    }
+    #blocoFerramentasModificacoes{
+      margin-top: 80px;
+      width: 100%;
+      height: auto;
+      display: flex;
+      justify-content: center;
+    }
+    #subBlocoFerramentasModificacoes{
+      width: 70%;
+      height: auto;
+      display: flex;
+      justify-content: space-around;
+    }
+    #createBlacklist{
+      background-image: url(./images/icon-blacklist.svg);
+      background-repeat: no-repeat;
+      background-position-x: 125px;
+    }
+    #text_createBlacklist{
+      margin-top: 80px;
+      text-align: center;
+      font-size: 23px;
+      font-family: 'Bai Jamjuree', sans-serif;
+      font-weight: 600;
+      color: #4f555a;
+    }
+    #desc_createBlacklist{
+      margin-top: 15px;
+      font-size: 15px;
+      font-family: 'Bai Jamjuree', sans-serif;
+      font-weight: 400;
+      line-height: 30px;
+      text-align: center;
+      color: #a7abae;
+    }
+    #PlainTextSnippets{
+      background-image: url(./images/icon-text.svg);
+      background-repeat: no-repeat;
+      background-position-x: 145px;
+    }
+    #text_PlainTextSnippets{
+      margin-top: 80px;
+      text-align: center;
+      font-size: 23px;
+      font-family: 'Bai Jamjuree', sans-serif;
+      font-weight: 600;
+      color: #4f555a;
+    }
+    #desc_PlainTextSnippets{
+      margin-top: 15px;
+      font-size: 15px;
+      font-family: 'Bai Jamjuree', sans-serif;
+      font-weight: 400;
+      line-height: 30px;
+      text-align: center;
+      color: #a7abae;
+    }
+    #SneakPreview{
+      background-image: url(./images/icon-preview.svg);
+      background-repeat: no-repeat;
+      background-position-x: 134px;
+    }
+    #text_SneakPreview{
+      margin-top: 80px;
+      text-align: center;
+      font-size: 23px;
+      font-family: 'Bai Jamjuree', sans-serif;
+      font-weight: 600;
+      color: #4f555a;
+    }
+    #desc_SneakPreview{
+      margin-top: 15px;
+      font-size: 15px;
+      font-family: 'Bai Jamjuree', sans-serif;
+      font-weight: 400;
+      line-height: 30px;
+      text-align: center;
+      color: #a7abae;
+    }
+    #blocoCooperacaoEmpresas{
+      width: 100%;
+      height: auto;
+      display: flex;
+      justify-content: center;
+    }
+    #subBlocoCooperacaoEmpresas{
+      margin: 150px 0px;
+      width: 70%;
+      height: 60px;
+      display: flex;
+      justify-content: space-between;
+    }
+    #iconeGoogle{
+      width: 180px;
+      height: 50px;
+      background-image: url(./images/logo-google.png);
+      background-repeat: no-repeat;
+    }
+    #iconeIBM{
+      width: 180px;
+      height: 50px;
+      background-position-x: 30px;
+      background-image: url(./images/logo-ibm.png);
+      background-repeat: no-repeat;
+    }
+    #iconeMicrosoft{
+      width: 195px;
+      height: 50px;
+      background-position-y: 10px;
+      background-position-x: 35px;
+      background-image: url(./images/logo-microsoft.png);
+      background-repeat: no-repeat;
+    }
+    #iconeHewlett{
+      width: 190px;
+      height: 55px;
+      background-position-x: 55px;
+      background-image: url(./images/logo-hp.png);
+      background-repeat: no-repeat;
+    }
+    #iconeVector{
+      width: 180px;
+      height: 55px;
+      background-position-y: 13px;
+      background-position-x: 55px;
+      background-image: url(./images/logo-vector-graphics.png);
+      background-repeat: no-repeat;
+    }
+
+    /*border: 1px solid blue;*/
+  </style>
+</head>
+<body>
+  <div id="blocoCabecalho">
+    <div id="subBlocoCabecalho">
+      <div>A history of everything you copy</div>
+    </div>
+  </div>
+  <div id="informacaoDownload">
+    <div id="blocoInformacaoDownload">Clipboard allows you to track and organize everything you 
+      copy. Instantly
+      <br>
+      access your clipboard on all your devices.
+    </div>
+  </div>
+  <div id="blocoBotaoDownload">
+    <div  id="subBlocoBotaoDownload">
+       <div id="botaoDownloadEsquerdo">Download for iOS</div>
+       <div id="botaoDownloadDireito">Download for Mac</div>
+    </div>
+  </div>
+  <div id="blocoInformativoDeTransferencia">
+    <div id="subBlocoInformativoDeTransferencia">
+      Keep track of your snippets
+      <div id="informativoDeTransferenciaArmazenamento">
+        Clipboard instantly stores any item you copy in the cloud, 
+        meaning you can access
+        <br>
+        your snippets immediately on all your 
+        devices. Our Mac and iOS apps will help you
+        <br>
+        organize everything.
+      </div>
+    </div>
+  </div>
+  <div id="blocoConteudo1">
+    <div id="subBlocoConteudo1"></div>
+    <div id="subBlocoConteudo2">
+      <div id="conteudoInterno0_subBlocoConteudo2">
+        Quick Search
+        <div id="conteudoInterno1_subBlocoConteudo2">Easily search your snippets by content,
+          <br>category, web address, application, and more.
+        </div>
+        <div id="conteudoInterno_subBlocoConteudo2">
+          iCloud Sync
+          <div id="conteudoInterno1_subBlocoConteudo2">
+            Instantly saves and syncs snippets across all
+            <br>
+            your devices.
+          </div>
+      </div>
+      <div id="conteudoInterno_subBlocoConteudo2">
+        Complete History
+        <div id="conteudoInterno1_subBlocoConteudo2">
+          Retrieve any snippets from the first moment
+          <br>
+          you started using the app.
+        </div>
+      </div>
+    </div>
+    </div>
+  </div>
+  <div id="blocoConteudo2_2">
+    <div id="subBlocoConteudo2_2">
+      Access Clipboard Anywhere
+      <div id="interno_subBlocoConteudo2_2">
+        Whether you’re on the go, or at your computer, you can access all your Clipboard 
+        <br>
+        snippets in a few simple clicks.
+      </div>
+    </div>
+  </div>
+  <div id="blocoConteudo2_3">
+    <div id="subBlocoConteudo2_3"></div>
+  </div>
+  <div id="blocoConteudo2_4">
+    <div id="subBlocoConteudo2_4">
+      Supercharge your workflow
+      <div id="interno_subBlocoConteudo2_4">
+        We’ve got the tools to boost your productivity.
+      </div>
+    </div>
+  </div>
+  <div id="blocoFerramentasModificacoes">
+    <div id="subBlocoFerramentasModificacoes">
+      <div id="createBlacklist">
+        <div id="text_createBlacklist">Create blacklist</div>      
+        <div id="desc_createBlacklist">
+          Ensure sensitive information never makes its
+          <br>
+          way to your clipboard by excluding certain
+          <br>
+          sources.
+        </div>
+      </div>
+      <div id="PlainTextSnippets">
+        <div id="text_PlainTextSnippets">Plain text snippets</div>      
+        <div id="desc_PlainTextSnippets">
+          Remove unwanted formatting from copied text
+          <br>
+          for a consistent look.
+        </div>
+      </div>
+      <div id="SneakPreview">
+        <div id="text_SneakPreview">Sneak preview</div>      
+        <div id="desc_SneakPreview">
+          Quick preview of all snippets on your Clipboard
+          <br>
+          for easy access.
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="blocoCooperacaoEmpresas">
+    <div id="subBlocoCooperacaoEmpresas">
+      <div id="iconeGoogle"></div>
+      <div id="iconeIBM"></div>
+      <div id="iconeMicrosoft"></div>
+      <div id="iconeHewlett"></div>
+      <div id="iconeVector"></div>
+    </div>
+  </div>
+
+  
+
+  <!--A history of everything you copy
+
+  Clipboard allows you to track and organize everything you 
+  copy. Instantly access your clipboard on all your devices.
+
+  Download for iOS
+  Download for Mac
+
+  Keep track of your snippets
+
+  Clipboard instantly stores any item you copy in the cloud, 
+  meaning you can access your snippets immediately on all your 
+  devices. Our Mac and iOS apps will help you organize everything.
+
+  Quick Search
+
+  Easily search your snippets by content, category, web address, application, and more.
+
+  iCloud Sync
+
+  Instantly saves and syncs snippets across all your devices.
+
+  Complete History
+
+  Retrieve any snippets from the first moment you started using the app.
+
+  Access Clipboard anywhere
+
+  Whether you’re on the go, or at your computer, you can access all your Clipboard 
+  snippets in a few simple clicks.
+
+  Supercharge your workflow
+
+  We’ve got the tools to boost your productivity.
+
+  Create blacklists
+
+  Ensure sensitive information never makes its way to your clipboard by excluding certain sources.
+
+  Plain text snippets
+
+  Remove unwanted formatting from copied text for a consistent look.
+
+  Sneak preview
+
+  Quick preview of all snippets on your Clipboard for easy access.
+
+  Clipboard for iOS and Mac OS
+
+  Available for free on the App Store. Download for Mac or iOS, sync with iCloud 
+  and you’re ready to start adding to your clipboard.
+
+  Download for iOS
+  Download for Mac
+
+  FAQs
+  Contact Us
+  Privacy Policy
+  Press Kit
+  Install Guide
+  
+  <footer>
+    <p class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">Your Name Here</a>.
+    </p>
+  </footer>-->
+</body>
+</html>
