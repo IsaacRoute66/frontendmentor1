@@ -17,6 +17,11 @@
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
 
+    
+    body{
+      width: 1583px;
+    }
+
     *{
       padding: 0;
       margin: 0;
@@ -43,7 +48,7 @@
       font-size: 45px;
       font-family: 'Bai Jamjuree', sans-serif;
       font-weight: 600;
-      color: #4f555a;
+      color: #4f555a;      
     }
     #informacaoDownload{
       font-size: 20.2px;
@@ -399,7 +404,7 @@
       height: 100%;
     }
     #subBlocoFooterCentro{
-      width: 75%;
+      width: 50%;
       height: 100%;
       display: flex;
       justify-content: space-between;
@@ -428,6 +433,112 @@
       width: 250px;
       height: 20px;
     }
+    #redesSociais{
+      width: 25%;
+      display: flex;
+    }
+    #redesSocialFacebook{
+      width: 25px;
+      height: 25px;
+      background-image: url(./images/icon-facebook.svg);
+      background-repeat: no-repeat;
+    }
+    #redesSocialTwitter{
+      width: 25px;
+      height: 25px;
+      margin-left: 25px;
+      background-image: url(./images/icon-twitter.svg);
+      background-repeat: no-repeat;
+    }
+    #redesSocialInstagram{
+      width: 25px;
+      height: 25px;
+      margin-left: 25px;
+      background-image: url(./images/icon-instagram.svg);
+      background-repeat: no-repeat;
+    }
+
+
+    @media (min-width: 320px){
+      #all-container{
+        width: 320px;
+      }
+      #blocoCabecalho{
+        width: 100%;
+        height: 300px;
+      }
+      #subBlocoCabecalho{
+        width: 90%;
+        background-size: 100px;
+        background-position-y: 70px;
+      }
+      #text-historia{
+        text-align: center;
+        font-weight: 600;
+        font-size: 28px;
+
+      }
+      #informacaoDownload{
+        width: 100%;
+      }
+      #blocoInformacaoDownload{
+        width: 90%;
+        font-size: 15px;
+      }
+      #blocoBotaoDownload{
+        width: 100%;
+      }
+      #subBlocoBotaoDownload{
+        margin: 0px;
+        width: 80%;
+        height: 114px;
+        flex-wrap: wrap;
+      }
+      #botaoDownloadEsquerdo{
+        margin: 0px 0px 20px 0px;
+        padding: 0px;
+      }
+      #botaoDownloadDireito{
+        margin: 0px;
+        padding: 0px;
+      }
+      #blocoInformativoDeTransferencia{
+        width: 100%;
+        height: 340px;
+      }
+      #subBlocoInformativoDeTransferencia{
+        margin-top: 50px;
+        width: 80%;
+        height: 80px;
+        font-size: 27px;
+      }
+      #informativoDeTransferenciaArmazenamento{
+        font-size: 12px;
+        font-weight: 500;
+      }
+      #blocoConteudo1{
+        width: 100%;
+        height: 1200px;
+        flex-wrap: wrap;
+        border: 1px solid blue;
+      }
+      #subBlocoConteudo1{
+        width: 80%;
+        height: 200px;
+        background-size: 250px;
+        background-position: 0;
+        border: 1px solid red;
+      }
+      #subBlocoConteudo2{
+        margin: 0px;
+        width: 70%;
+        height: 720px;
+        border: 1px solid red;
+      }
+      #conteudoInterno0_subBlocoConteudo2{
+
+      }
+    }
 
 
 
@@ -436,162 +547,175 @@
   </style>
 </head>
 <body>
-  <div id="blocoCabecalho">
-    <div id="subBlocoCabecalho">
-      <div>A history of everything you copy</div>
-    </div>
-  </div>
-  <div id="informacaoDownload">
-    <div id="blocoInformacaoDownload">Clipboard allows you to track and organize everything you 
-      copy. Instantly
-      <br>
-      access your clipboard on all your devices.
-    </div>
-  </div>
-  <div id="blocoBotaoDownload">
-    <div  id="subBlocoBotaoDownload">
-       <div id="botaoDownloadEsquerdo">Download for iOS</div>
-       <div id="botaoDownloadDireito">Download for Mac</div>
-    </div>
-  </div>
-  <div id="blocoInformativoDeTransferencia">
-    <div id="subBlocoInformativoDeTransferencia">
-      Keep track of your snippets
-      <div id="informativoDeTransferenciaArmazenamento">
-        Clipboard instantly stores any item you copy in the cloud, 
-        meaning you can access
-        <br>
-        your snippets immediately on all your 
-        devices. Our Mac and iOS apps will help you
-        <br>
-        organize everything.
+  <div id="all-container">
+    <div id="blocoCabecalho">
+      <div id="subBlocoCabecalho">
+        <div id="text-historia">
+          A history of
+          <br>
+          everything you copy</div>
       </div>
     </div>
-  </div>
-  <div id="blocoConteudo1">
-    <div id="subBlocoConteudo1"></div>
-    <div id="subBlocoConteudo2">
-      <div id="conteudoInterno0_subBlocoConteudo2">
-        Quick Search
-        <div id="conteudoInterno1_subBlocoConteudo2">Easily search your snippets by content,
-          <br>category, web address, application, and more.
+    <div id="informacaoDownload">
+      <div id="blocoInformacaoDownload">
+        Clipboard allows you to track and
+        <br>
+        organize everything you 
+        copy. Instantly
+        <br>
+        access your clipboard on all your devices.
+      </div>
+    </div>
+    <div id="blocoBotaoDownload">
+      <div  id="subBlocoBotaoDownload">
+        <div id="botaoDownloadEsquerdo">Download for iOS</div>
+        <div id="botaoDownloadDireito">Download for Mac</div>
+      </div>
+    </div>
+    <div id="blocoInformativoDeTransferencia">
+      <div id="subBlocoInformativoDeTransferencia">
+        Keep track of your snippets
+        <div id="informativoDeTransferenciaArmazenamento">
+          Clipboard instantly stores any item you copy in the cloud, 
+          meaning you can access
+          <br>
+          your snippets immediately on all your 
+          devices. Our Mac and iOS apps will help you
+          <br>
+          organize everything.
+        </div>
+      </div>
+    </div>
+    <div id="blocoConteudo1">
+      <div id="subBlocoConteudo1"></div>
+      <div id="subBlocoConteudo2">
+        <div id="conteudoInterno0_subBlocoConteudo2">
+          Quick Search
+          <div id="conteudoInterno1_subBlocoConteudo2">Easily search your snippets by content,
+            <br>category, web address, application, and more.
+          </div>
+          <div id="conteudoInterno_subBlocoConteudo2">
+            iCloud Sync
+            <div id="conteudoInterno1_subBlocoConteudo2">
+              Instantly saves and syncs snippets across all
+              <br>
+              your devices.
+            </div>
         </div>
         <div id="conteudoInterno_subBlocoConteudo2">
-          iCloud Sync
+          Complete History
           <div id="conteudoInterno1_subBlocoConteudo2">
-            Instantly saves and syncs snippets across all
+            Retrieve any snippets from the first moment
             <br>
-            your devices.
+            you started using the app.
           </div>
+        </div>
       </div>
-      <div id="conteudoInterno_subBlocoConteudo2">
-        Complete History
-        <div id="conteudoInterno1_subBlocoConteudo2">
-          Retrieve any snippets from the first moment
+      </div>
+    </div>
+    <div id="blocoConteudo2_2">
+      <div id="subBlocoConteudo2_2">
+        Access Clipboard Anywhere
+        <div id="interno_subBlocoConteudo2_2">
+          Whether you’re on the go, or at your computer, you can access all your Clipboard 
           <br>
-          you started using the app.
+          snippets in a few simple clicks.
         </div>
       </div>
     </div>
+    <div id="blocoConteudo2_3">
+      <div id="subBlocoConteudo2_3"></div>
     </div>
-  </div>
-  <div id="blocoConteudo2_2">
-    <div id="subBlocoConteudo2_2">
-      Access Clipboard Anywhere
-      <div id="interno_subBlocoConteudo2_2">
-        Whether you’re on the go, or at your computer, you can access all your Clipboard 
+    <div id="blocoConteudo2_4">
+      <div id="subBlocoConteudo2_4">
+        Supercharge your workflow
+        <div id="interno_subBlocoConteudo2_4">
+          We’ve got the tools to boost your productivity.
+        </div>
+      </div>
+    </div>
+    <div id="blocoFerramentasModificacoes">
+      <div id="subBlocoFerramentasModificacoes">
+        <div id="createBlacklist">
+          <div id="text_createBlacklist">Create blacklist</div>      
+          <div id="desc_createBlacklist">
+            Ensure sensitive information never makes its
+            <br>
+            way to your clipboard by excluding certain
+            <br>
+            sources.
+          </div>
+        </div>
+        <div id="PlainTextSnippets">
+          <div id="text_PlainTextSnippets">Plain text snippets</div>      
+          <div id="desc_PlainTextSnippets">
+            Remove unwanted formatting from copied text
+            <br>
+            for a consistent look.
+          </div>
+        </div>
+        <div id="SneakPreview">
+          <div id="text_SneakPreview">Sneak preview</div>      
+          <div id="desc_SneakPreview">
+            Quick preview of all snippets on your Clipboard
+            <br>
+            for easy access.
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="blocoCooperacaoEmpresas">
+      <div id="subBlocoCooperacaoEmpresas">
+        <div id="iconeGoogle"></div>
+        <div id="iconeIBM"></div>
+        <div id="iconeMicrosoft"></div>
+        <div id="iconeHewlett"></div>
+        <div id="iconeVector"></div>
+      </div>
+    </div>
+    <div id="blocoDispositivos">
+      <div id="subBlocoDispositivos">
+        <div>Clipboard for iOS and Mac OS</div>
+      </div>
+    </div>
+    <div id="informacaoDownload">
+      <div id="blocoInformacaoDownload">Available for free on the App Store. Download for Mac or iOS, sync with iCloud 
+        and
         <br>
-        snippets in a few simple clicks.
+        you’re ready to start adding to your clipboard.
       </div>
     </div>
-  </div>
-  <div id="blocoConteudo2_3">
-    <div id="subBlocoConteudo2_3"></div>
-  </div>
-  <div id="blocoConteudo2_4">
-    <div id="subBlocoConteudo2_4">
-      Supercharge your workflow
-      <div id="interno_subBlocoConteudo2_4">
-        We’ve got the tools to boost your productivity.
+    <div id="blocoBotaoDownload">
+      <div  id="subBlocoBotaoDownload">
+        <div id="botaoDownloadEsquerdo">Download for iOS</div>
+        <div id="botaoDownloadDireito">Download for Mac</div>
       </div>
     </div>
-  </div>
-  <div id="blocoFerramentasModificacoes">
-    <div id="subBlocoFerramentasModificacoes">
-      <div id="createBlacklist">
-        <div id="text_createBlacklist">Create blacklist</div>      
-        <div id="desc_createBlacklist">
-          Ensure sensitive information never makes its
-          <br>
-          way to your clipboard by excluding certain
-          <br>
-          sources.
+      <div id="footer">
+        <div id="blocoFooter">
+          <div id="subBlocoFooterEsquerdo"></div>
+          <div id="subBlocoFooterCentro">
+            <table>
+              <tr>
+                <td id="FAQs">FAQs</td>
+                <td id="PrivacyPolicy">Privacy Policy</td>
+                <td id="InstallGuide">Install Guide</td>
+              </tr>
+              <tr>
+                <td id="ContactUs">Contact Us</td>
+                <td id="PressKit">Press Kit</td>
+              </tr>
+            </table>
+          </div>
+          <div id="redesSociais">
+            <div id="redesSocialFacebook"></div>
+            <div id="redesSocialTwitter"></div>
+            <div id="redesSocialInstagram"></div>
+          </div>
+          </div>
         </div>
       </div>
-      <div id="PlainTextSnippets">
-        <div id="text_PlainTextSnippets">Plain text snippets</div>      
-        <div id="desc_PlainTextSnippets">
-          Remove unwanted formatting from copied text
-          <br>
-          for a consistent look.
-        </div>
-      </div>
-      <div id="SneakPreview">
-        <div id="text_SneakPreview">Sneak preview</div>      
-        <div id="desc_SneakPreview">
-          Quick preview of all snippets on your Clipboard
-          <br>
-          for easy access.
-        </div>
-      </div>
-    </div>
   </div>
-  <div id="blocoCooperacaoEmpresas">
-    <div id="subBlocoCooperacaoEmpresas">
-      <div id="iconeGoogle"></div>
-      <div id="iconeIBM"></div>
-      <div id="iconeMicrosoft"></div>
-      <div id="iconeHewlett"></div>
-      <div id="iconeVector"></div>
-    </div>
-  </div>
-  <div id="blocoDispositivos">
-    <div id="subBlocoDispositivos">
-      <div>Clipboard for iOS and Mac OS</div>
-    </div>
-  </div>
-  <div id="informacaoDownload">
-    <div id="blocoInformacaoDownload">Available for free on the App Store. Download for Mac or iOS, sync with iCloud 
-      and
-      <br>
-      you’re ready to start adding to your clipboard.
-    </div>
-  </div>
-  <div id="blocoBotaoDownload">
-    <div  id="subBlocoBotaoDownload">
-       <div id="botaoDownloadEsquerdo">Download for iOS</div>
-       <div id="botaoDownloadDireito">Download for Mac</div>
-    </div>
-  </div>
-    <div id="footer">
-      <div id="blocoFooter">
-        <div id="subBlocoFooterEsquerdo"></div>
-        <div id="subBlocoFooterCentro">
-          <table>
-            <tr>
-              <td id="FAQs">FAQs</td>
-              <td id="PrivacyPolicy">Privacy Policy</td>
-              <td id="InstallGuide">Install Guide</td>
-            </tr>
-            <tr>
-              <td id="ContactUs">Contact Us</td>
-              <td id="PressKit">Press Kit</td>
-            </tr>
-          </table>
-        </div>
-        </div>
-      </div>
-    </div>
   
 
   <!--A history of everything you copy
