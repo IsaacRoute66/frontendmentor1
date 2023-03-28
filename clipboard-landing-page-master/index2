@@ -43,7 +43,7 @@
       justify-self:flex-start;
       background-size: 110px;
     }
-    #historyOrganize{
+    #princelyTitle{
       width: 100%;
       height: auto;
       font-size: 30px;
@@ -53,10 +53,88 @@
       text-align: center;
       display: flex;
       justify-content: center;
+      align-items: center;
       flex-wrap: wrap;
     }
-    #historyOrganizeSubtitle{
+    #Subtitle{
       margin-top: 15px;
+      width: 90%;
+      font-size: 15px;
+      font-family: 'Bai Jamjuree', sans-serif;
+      font-weight: 400;
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      color: #a7abae;
+    }
+    #princelyTitle1{
+      margin-top: 30px;
+      width: 100%;
+      height: auto;
+      font-size: 25px;
+      font-family: 'Bai Jamjuree', sans-serif;
+      font-weight: 600;
+      color: #4f555a;
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+    #Subtitle1{
+      margin-top: 15px;
+      width: 90%;
+      font-size: 15px;
+      font-family: 'Bai Jamjuree', sans-serif;
+      font-weight: 400;
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      color: #a7abae;
+    }
+    #princelyTitle2{
+      margin-top: 100px;
+      width: 100%;
+      height: auto;
+      font-size: 25px;
+      font-family: 'Bai Jamjuree', sans-serif;
+      font-weight: 600;
+      color: #4f555a;
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+    #Subtitle2{
+      margin-top: 15px;
+      width: 90%;
+      font-size: 15px;
+      font-family: 'Bai Jamjuree', sans-serif;
+      font-weight: 400;
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      color: #a7abae;
+    }
+    #princelyTitle3{
+      margin-top: 10px;
+      width: 100%;
+      height: auto;
+      font-size: 25px;
+      font-family: 'Bai Jamjuree', sans-serif;
+      font-weight: 600;
+      color: #4f555a;
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+    #Subtitle3{
       width: 90%;
       font-size: 15px;
       font-family: 'Bai Jamjuree', sans-serif;
@@ -75,6 +153,12 @@
       border-radius: 20px;
       background-color:darkturquoise;
       color: #ffffff;
+      font-size: 16px;
+      font-family: 'Bai Jamjuree', sans-serif;
+      font-weight: 600;
+      justify-content: center;
+      align-items: center;
+      display: flex;
       border: 1px solid red;
       border-bottom: 3px solid red; 
     }
@@ -85,11 +169,120 @@
       border-radius: 20px;
       background-color:darkturquoise;
       color: #ffffff;
+      font-size: 16px;
+      font-family: 'Bai Jamjuree', sans-serif;
+      font-weight: 600;
+      justify-content: center;
+      align-items: center;
+      display: flex;
       border: 1px solid red;
       border-bottom: 3px solid red; 
     }
+    #imgDevices{
+      margin-top: 50px;
+      width: 80%;
+      height: 200px;
+      background-image: url(./images/image-computer.png);
+      background-repeat: no-repeat;
+      background-size: 250px;
+    }
+    #imgDevices2{
+      margin-top: 30px;
+      width: 80%;
+      height: 200px;
+      background-image: url(./images/image-devices.png);
+      background-repeat: no-repeat;
+      background-size: 270px;
+    }
+    #toolsUsed{
+      margin-top: 10px;
+      width: 100%;
+      height: auto;
+      font-size: 25px;
+      font-family: 'Bai Jamjuree', sans-serif;
+      font-weight: 600;
+      color: #4f555a;
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+    #toolsUsed1{
+      margin-top: 20px;
+      width: 90%;
+      font-size: 15px;
+      font-family: 'Bai Jamjuree', sans-serif;
+      font-weight: 400;
+      text-align: center;
+      color: #a7abae;
+    }
+    #imgToolsBlacklist{
+      margin: 40px 0px;
+      width: 80%;
+      height: 40px;
+      background-image: url(./images/icon-blacklist.svg);
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+    #imgToolsText{
+      margin: 40px 0px;
+      width: 80%;
+      height: 40px;
+      background-image: url(./images/icon-text.svg);
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+    #imgToolsPreview{
+      margin: 40px 0px;
+      width: 80%;
+      height: 40px;
+      background-image: url(./images/icon-preview.svg);
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+    #companyCooperation{
+      width: 100%;
+      height: auto;
+      border: 1px solid red;
+    }
+    #companyGoogle{
+      width: 169px;
+      height: 50px;
+      background-image: url(images/logo-google.png);
+      background-repeat: no-repeat;
+      border: 1px solid red;
+    }
+    #companyIbm{
+      width: 138px;
+      height: 50px;
+      background-image: url(images/logo-ibm.png);
+      background-repeat: no-repeat;
+      border: 1px solid red;
+    }
+    #companyMicrosoft{
+      width: 165px;
+      height: 50px;
+      background-image: url(images/logo-microsoft.png);
+      background-repeat: no-repeat;
+      border: 1px solid red;
+    }
+    #companyHewlett{
+      width: 140px;
+      height: 55px;
+      background-image: url(images/logo-hp.png);
+      background-repeat: no-repeat;
+      border: 1px solid red;
+    }
+    #companyVector{
+      width: 140px;
+      height: 34px;
+      background-image: url(images/logo-vector-graphics.png);
+      background-repeat: no-repeat;
+      border: 1px solid red;
+    }
 
-
+    
     @media (min-width: 320px){
      
     }
@@ -105,16 +298,61 @@
     <div id="cabecalho">
       <div id="centerCabecalho"></div>
     </div>
-    <div id="historyOrganize">
+    <div id="princelyTitle">
       A history of everything you copy
-      <div id="historyOrganizeSubtitle">
+      <div id="Subtitle">
         Clipboard allows you to track and organize everything you 
         copy. Instantly access your clipboard on all your devices.
-        <div id="bottomDownloadLeft">teste</div>
-        <div id="bottomDownloadRight">teste</div>
+        <div id="bottomDownloadLeft">Download for iOS</div>
+        <div id="bottomDownloadRight">Download for Mac</div>
       </div>
     </div>
-    <div></div>
+    <div id="princelyTitle">Keep track of your snippets
+      <div id="Subtitle">Clipboard instantly stores any item you copy in the cloud, 
+        meaning you can access your snippets immediately on all your 
+        devices. Our Mac and iOS apps will help you organize everything.
+      </div>
+      <div id="imgDevices"></div>
+    </div>
+    <div id="princelyTitle1">Quick Search
+      <div id="Subtitle1">Easily search your snippets by content, category, web address, application, and more.</div>
+    </div>
+    <div id="princelyTitle1">ICloud Sync
+      <div id="Subtitle1">Instantly saves and syncs snippets across all your devices.</div>
+    </div>
+    <div id="princelyTitle1">Complete History
+      <div id="Subtitle1">Retrieve any snippets from the first moment you started using the app.</div>
+    </div>
+    <div id="princelyTitle2">Access Clipboard anywhere
+      <div id="Subtitle2">Whether you’re on the go, or at your computer, you can access all your Clipboard 
+        snippets in a few simple clicks.</div>
+      <div id="imgDevices2"></div>
+    </div>
+    <div id="princelyTitle3">Supercharge your workflow
+      <div id="Subtitle3">We’ve got the tools to boost your productivity.</div>
+    </div>
+    <div id="toolsUsed">
+      <div id="imgToolsBlacklist"></div>
+      Create blacklists
+      <div id="toolsUsed1">Ensure sensitive information never makes its way to your clipboard by excluding certain sources.</div>
+    </div>
+    <div id="toolsUsed">
+      <div id="imgToolsText"></div>
+      Plain text snippets
+      <div id="toolsUsed1">Remove unwanted formatting from copied text for a consistent look.</div>
+    </div>
+    <div id="toolsUsed">
+      <div id="imgToolsPreview"></div>
+      Sneak preview
+      <div id="toolsUsed1">Quick preview of all snippets on your Clipboard for easy access.</div>
+    </div>
+    <div id="companyCooperation">
+      <div id="companyGoogle"></div>
+      <div id="companyIbm"></div>
+      <div id="companyMicrosoft"></div>
+      <div id="companyHewlett"></div>
+      <div id="companyVector"></div>
+    </div>
   </div><!--allContainer-->
 </body>
 </html>
